@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23650428856345204}
   - component: {fileID: 114332627972903612}
   - component: {fileID: 114177431710427036}
-  - component: {fileID: 114208025130592088}
+  - component: {fileID: 114402440329171592}
   m_Layer: 0
   m_Name: PlayerHead
   m_TagString: Untagged
@@ -192,18 +192,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114208025130592088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1438026413493582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b552a66ac90c2054a8d680fc5a24f1b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vrDeviceInterface: {fileID: 0}
 --- !u!114 &114332627972903612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,6 +224,18 @@ MonoBehaviour:
     i15: 3
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114402440329171592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1438026413493582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3d02240c718b04abfc049846630fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deviceName: VRHead
 --- !u!135 &135424255508675342
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -716,9 +716,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2089800478}
   - component: {fileID: 2089800479}
-  - component: {fileID: 2089800480}
   m_Layer: 0
-  m_Name: Frame
+  m_Name: VRHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,17 +748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
---- !u!114 &2089800480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089800477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 286a12d92f2364344a92b49de3b7af13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2113601275
 GameObject:
   m_ObjectHideFlags: 0
