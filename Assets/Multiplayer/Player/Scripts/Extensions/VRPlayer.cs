@@ -12,8 +12,17 @@ namespace Multiplayer.VR
     /// </summary>
     public class VRPlayer : Player
     {
+        /// <summary>
+        /// the head prefab to be spawned
+        /// </summary>
         [SerializeField]
         private GameObject _headPrefab;
+
+        /// <summary>
+        /// the hand prefab to be spawned
+        /// </summary>
+        [SerializeField]
+        private GameObject _handPrefab;
 
         /// <summary>
         /// when local player is connected, spawns HMD assets
@@ -21,17 +30,23 @@ namespace Multiplayer.VR
         public override void OnStartLocalPlayer()
         {
             base.OnStartLocalPlayer();
-            CmdSpawnHMD();
+            CmdSpawnDevices();
         }
 
         /// <summary>
         /// spawns HMD assets on the server
         /// </summary>
         [Command]
-        public void CmdSpawnHMD()
+        public void CmdSpawnDevices()
         {
             var head = Instantiate(_headPrefab);
             NetworkServer.SpawnWithClientAuthority(head, connectionToClient);
+            var lhand = Instantiate(_handPrefab);
+            lhand.GetComponent<MultiplayerDeviceTracker>().DeviceName = "VRLHand";
+            NetworkServer.SpawnWithClientAuthority(lhand, connectionToClient);
+            var rhand = Instantiate(_handPrefab);
+            rhand.GetComponent<MultiplayerDeviceTracker>().DeviceName = "VRRHand";
+            NetworkServer.SpawnWithClientAuthority(rhand, connectionToClient);
         }
     }
 }

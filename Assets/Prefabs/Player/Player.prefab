@@ -86,4 +86,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _headPrefab: {fileID: 1438026413493582, guid: 6ba32b1252a5f9e48b0a9498ab378703,
     type: 2}
-  _head: {fileID: 0}
+  _handPrefab: {fileID: 1062889937316426, guid: 65c1faff2d886974091dc84fd83acf70,
+    type: 2}

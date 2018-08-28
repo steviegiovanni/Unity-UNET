@@ -21,6 +21,7 @@ namespace Multiplayer
         /// name of the device to be tracked
         /// </summary>
         [SerializeField]
+        [SyncVar]
         private string _deviceName;
         public string DeviceName
         {
