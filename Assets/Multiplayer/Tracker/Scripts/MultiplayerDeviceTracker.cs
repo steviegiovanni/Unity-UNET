@@ -50,8 +50,8 @@ namespace Multiplayer
                 if (_device == null)
                 {
                     _device = GameObject.Find(DeviceName);
-                    if (_device == null)
-                        Debug.LogWarning("No device found!");
+                    //if (_device == null)
+                    //    Debug.LogWarning("No device found!");
                 }
 
                 // track the device if it exists
