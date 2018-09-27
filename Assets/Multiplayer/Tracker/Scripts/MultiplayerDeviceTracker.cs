@@ -50,7 +50,7 @@ namespace Multiplayer
                 if (_device == null)
                 {
                     _device = GameObject.Find(DeviceName);
-                    // test commit
+                    // test commit lalalala
                     //if (_device == null)
                     //    Debug.LogWarning("No device found!");
                 }
